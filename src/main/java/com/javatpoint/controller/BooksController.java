@@ -49,4 +49,11 @@ private Books update(@RequestBody Books books)
 booksService.saveOrUpdate(books);
 return books;
 }
+
+
+@GetMapping("/books/hello")
+private String hello() 
+{
+return "hello";
+}
 }
